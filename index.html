@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Generator podpisu</title>
+</head>
+<body>
+<div class="content">
+    <form>
+        <ul class="footer-gen">
+            <li>
+                <div class="question">Imię i nazwisko:</div>
+                <input type="text" id="name">
+            </li>
+            <li>
+                <div class="question">Stanowisko:</div>
+                <input type="text" id="position">
+            </li>
+            <li>
+                <div class="question">Numer telefonu:</div>
+                <input type="text" id="number">
+            </li>
+            <li>
+                <div class="question">Oddział:</div>
+                <input type="text" id="department">
+            </li>
+            <li>
+                <div class="question">Adres oddziału:</div>
+                <input type="text" id="adress">
+            </li>
+            <li>
+                <div class="question">E-mail:</div>
+                <input type="text" id="email">
+            </li>
+            <li>
+                <div class="question">Wybierz zdjęcie:</div>
+                <select id="photo">
+                    <option value="online">Online</option>
+                    <option value="fundacja">Fundacja UNUM</option>
+                </select>
+            </li><br><br>  
+            <li class="button">
+                <input class="btn" id="generatebutton" type="button" value="WYGENERUJ" onClick="writeValues(form)">
+              </li>
+        </ul>
+        <div id="copyarea">
+        <span id="first"></span><br>
+        <span id="email-txt"></span><br>
+        <span id="page"></span><br>
+        <span id="company-data" style="font-size: 10px; color:#808080"></span><br>
+        <span id="rodo-data" style="font-size: 10px; color:#808080"></span><br>
+        <span id="eco" style="font-size: 10px; color:#00a000"></span><br>
+        </div>
+    </form>
+    <button type="button" class="btn" id="copyButton" onclick="CopyToClipboard(copyarea)">KOPIUJ PODPIS</button>
+    <br><br><br>
+</div>
+<script type="text/javascript" src="scripts.js"></script>
+</body>
+</html>
+
