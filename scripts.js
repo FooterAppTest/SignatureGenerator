@@ -15,11 +15,19 @@ window.writeValues = function(form) {
   }
 
   if(photo.value = "online"){
-    document.forms[0].elements[6].options[0].value='<a href="http://www.fundacjaunum.pl/">' + '<img src="https://www.unum.pl/wp-content/uploads/2022/03/online.jpg" style="width: 500px;">' + '</a>';
+    document.forms[0].elements[6].options[0].value='<a href="https://www.unum.pl">' + '<img src="https://www.unum.pl/wp-content/uploads/2022/03/online.jpg" style="width: 500px;">' + '</a>';
   } 
 
   if(photo.value = "fundacja"){
-    document.forms[0].elements[6].options[1].value='<a href="http://www.fundacjaunum.pl/">' + '<img src="https://www.unum.pl/wp-content/uploads/2022/03/Fundacja_Unum_Banners_2500x600_s1.png" style="width: 500px;">' + '</a>';
+    document.forms[0].elements[6].options[1].value='<a href="http://www.fundacjaunum.pl/">' + '<img src="" style="width: 500px;">' + '</a>';
+  } 
+
+  if(photo.value = "mdrt"){
+    document.forms[0].elements[6].options[2].value='<a href="https://www.karierawunum.pl">' + '<img src="" style="width: 500px;">' + '</a>';
+  } 
+
+  if(photo.value = "zespol"){
+    document.forms[0].elements[6].options[3].value='<a href="https://www.karierawunum.pl">' + '<img src="" style="width: 500px;">' + '</a>';
   } 
 
   function CopyToClipboard(containerid) {
