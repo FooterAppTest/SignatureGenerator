@@ -27,7 +27,7 @@ window.writeValues = function(form) {
   } 
 
   if(photo.value = "zespol"){
-    document.forms[0].elements[6].options[3].value='<a href="https://www.karierawunum.pl">' + '<img src="https://qa.unum.pl/wp-content/uploads/2022/04/Banner_Dolacz_500x100px.png" style="width: 500px;">' + '</a>';
+    document.forms[0].elements[6].options[3].value='<a href="https://www.karierawunum.pl">' + '<img src="https://unum.pl/wp-content/uploads/2022/04/Banner_Dolacz_500x100px.png" style="width: 500px;">' + '</a>';
   } 
 
   function CopyToClipboard(containerid) {
